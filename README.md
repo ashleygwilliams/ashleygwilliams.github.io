@@ -11,6 +11,9 @@ This API is a work in progress :)
 #### [Please fork this project and make your own portfolio with it! <3](https://github.com/ashleygwilliams/ashleygwilliams.github.io/new/master?readme=1#fork-destination-box)
 
 ## Up and Running
+This project was built using [Node](https://nodejs.org/), so you'll need that to run it.
+To check if you have it installed, go to your terminal/cmd and type `node -v`. If you need
+to install Node, you can head [here](https://nodejs.org/download/).
 
 ### Run the API
 This API is built in the [Endpoints framework](http://www.github.com/endpoints/endpoints).
