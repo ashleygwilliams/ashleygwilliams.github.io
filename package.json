@@ -6,6 +6,7 @@
     "url": "git@github.com:ashleygwilliams/ashleygwilliams.github.io.git"
   },
   "dependencies": {
+    "body-parser": "^1.12.3",
     "bookshelf": "^0.7.9",
     "endpoints": "git://github.com/endpoints/endpoints.git",
     "express": "^4.10.6",
