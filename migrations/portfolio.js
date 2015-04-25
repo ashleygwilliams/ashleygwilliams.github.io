@@ -22,7 +22,8 @@ exports.up = function (knex) {
       t.text('role');
       t.text('url');
       t.text('description');  
-      t.date('date').notNullable();
+      t.date('start').notNullable();
+      t.date('end');
     }).
     createTable('writing', function (t) {
       t.increments('id');

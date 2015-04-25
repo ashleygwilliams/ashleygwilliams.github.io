@@ -13,9 +13,11 @@ module.exports = {
       description: {
         type: 'string'
       },
-      date: {
-        type: 'string',
-        format: 'date-time'
+      start: {
+        type: 'string'
+      },
+      end: {
+        type: 'string'
       },
       url: {
         type: 'string'
