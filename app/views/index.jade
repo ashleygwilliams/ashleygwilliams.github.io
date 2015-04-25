@@ -1,0 +1,64 @@
+extends layout
+
+block content
+  .row
+      h1 GET /ashleygwilliams
+      pre
+        .code.
+          {
+            "data": [{
+              "type": "engineer/educator"
+              "id": 666,
+              "name": "ashley g. williams",
+              "location": "ridgewood, queens, NY",
+              "email": <a href="mailto:ashley666ashley@gmail.com">"ashley666ashley@gmail.com"</a>,
+              "twitter": <a href="http://www.twitter.com/ag_dubs">"http://www.twitter.com/ag_dubs"</a>,
+              "github": <a href="http://www.github.com/ashleygwilliams">"http://www.github.com/ashleygwilliams"</a>
+              "links": {
+                "self": <a href="http://ashleygwilliams.github.io">"http://ashleygwilliams.github.io"</a>,
+                "projects": {
+                  "linkage": [
+                    { "type": "framework", "name": "endpoints"},
+                    { "type": "education", "name": "js-assessment"}
+                  ]
+                }, 
+                "presentations": { 
+                  "linkage": {  
+                                "type": "presentations",
+                                "name": "how to train your programmer"
+                             }
+                }
+              }
+            }],
+            "included": [{
+              "type": "projects",
+              "name": "endpoints",
+              "description": "a hypermedia API framework for javascript",
+              "role": "architecture decisions and documentation"
+              "links": {
+                "self": <a href="http://www.github.com/endpoints">"http://www.github.com/endpoints"</a>
+              }  
+            }, {
+              "type": "projects",
+              "name": "js-assessment",
+              "description": "a test-drven approach to assessing JS skills",
+              "role": "maintainer",
+              "links": {
+                "self": <a href="http://www.github.com/rmurphey/js-assessment">"http://www.github.com/rmurphey/js-assessment"</a>,
+                "next": <a href="http://www.github.com/rmurphey/js-assessment-answers">"http://www.github.com/rmurphey/js-assessment-answers"</a>
+              }
+            }, {
+              "type": "presentations",
+              "name": "how to train your programmer",
+              "venues": [
+                "[UPCOMING] CascadiaFest July 2015",
+                "[UPCOMING] JSConf May 2015",
+                "MIT Media Lab, Social Computing Group October 2014",
+                "BostonJS August 2014",
+                "University of Amsterdam, Coding the Humanities Seminar June 2014"
+              ],
+              "links": {
+                "self": <a href="http://www.github.com/ashelygwilliams/how-to-train-your-programmer">"http://www.github.com/ashleygwilliams/how-to-train-your-programmer"</a>
+              }]
+            ]
+          }

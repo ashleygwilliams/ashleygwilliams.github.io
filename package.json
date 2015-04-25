@@ -1,0 +1,18 @@
+{
+  "name": "ashleygwilliams.github.io",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ashleygwilliams/ashleygwilliams.github.io.git"
+  },
+  "dependencies": {
+    "bookshelf": "^0.7.9",
+    "express": "^4.10.6",
+    "jade": "^1.8.2",
+    "knex": "^0.7.6",
+    "markdown": "^0.5.0",
+    "sqlite3": "^3.0.5",
+    "endpoints": "git://github.com/endpoints/endpoints.git"
+  },
+  "devDependencies": {}
+}
