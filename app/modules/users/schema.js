@@ -4,19 +4,19 @@ module.exports = {
       id: {
         type: 'integer'
       },
-      user_id: {
-        type: 'integer'
-      },
       name: {
         type: 'string'
       },
-      role: {
+      title: {
         type: 'string'
       },
-      description: {
+      location: {
         type: 'string'
       },
-      url: {
+      github: {
+        type: 'string'
+      },
+      twitter: {
         type: 'string'
       }
     }

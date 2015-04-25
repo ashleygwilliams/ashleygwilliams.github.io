@@ -1,8 +1,17 @@
 //migrations.fantasy.js
 exports.up = function (knex) {
   return knex.schema.
+    createTable('users', function(t){
+      t.increments('id');
+      t.text('name').notNullable().unique();
+      t.text('title');
+      t.text('location');
+      t.text('github');
+      t.text('twitter');
+    }).
     createTable('projects', function (t) {
       t.increments('id');
+      t.integer('user_id').notNullable().references('id').inTable('users');
       t.text('name').notNullable().unique();
       t.text('role');
       t.text('description');
@@ -10,6 +19,7 @@ exports.up = function (knex) {
     }).
     createTable('presentations', function (t) {
       t.increments('id');
+      t.integer('user_id').notNullable().references('id').inTable('users');
       t.text('title').notNullable();
       t.text('url').notNullable();
       t.text('venue').notNullable();
@@ -18,6 +28,7 @@ exports.up = function (knex) {
     }).
     createTable('community', function (t) {
       t.increments('id');
+      t.integer('user_id').notNullable().references('id').inTable('users');
       t.text('name').notNullable();
       t.text('role');
       t.text('url');
@@ -27,6 +38,7 @@ exports.up = function (knex) {
     }).
     createTable('writing', function (t) {
       t.increments('id');
+      t.integer('user_id').notNullable().references('id').inTable('users');
       t.text('title').notNullable();
       t.text('summary');
       t.text('url').notNullable();
@@ -35,6 +47,7 @@ exports.up = function (knex) {
 
 exports.down = function (knex) {
   return knex.schema.
+    dropTable('users').
     dropTable('projects').
     dropTable('presentations').
     dropTable('community').

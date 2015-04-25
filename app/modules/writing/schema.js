@@ -4,6 +4,9 @@ module.exports = {
       id: {
         type: 'integer'
       },
+      user_id: {
+        type: 'integer'
+      },
       title: {
         type: 'string'
       },
