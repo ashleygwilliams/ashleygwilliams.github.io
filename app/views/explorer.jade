@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  form
+    .row
+      .one.columns GET
+      .eight.columns
+        input.u-full-width(value="http://localhost:8080/ashleygwilliams")
+      .two.columns
+        a.button.button-primary Explore! 
+    .row
+      textarea.u-full-width
+  script(src="/public/js/api-browser.js", type="text/javascript")

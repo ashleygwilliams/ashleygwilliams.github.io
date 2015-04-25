@@ -7,12 +7,13 @@
   },
   "dependencies": {
     "bookshelf": "^0.7.9",
+    "endpoints": "git://github.com/endpoints/endpoints.git",
     "express": "^4.10.6",
+    "express-cors": "0.0.3",
     "jade": "^1.8.2",
     "knex": "^0.7.6",
     "markdown": "^0.5.0",
-    "sqlite3": "^3.0.5",
-    "endpoints": "git://github.com/endpoints/endpoints.git"
+    "sqlite3": "^3.0.5"
   },
   "scripts": {
     "start": "node index.js",
