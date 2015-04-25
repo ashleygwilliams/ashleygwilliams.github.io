@@ -11,6 +11,7 @@
     "endpoints": "git://github.com/endpoints/endpoints.git",
     "express": "^4.10.6",
     "express-cors": "0.0.3",
+    "express-routebuilder": "^2.1.0",
     "jade": "^1.8.2",
     "knex": "^0.7.6",
     "markdown": "^0.5.0",
