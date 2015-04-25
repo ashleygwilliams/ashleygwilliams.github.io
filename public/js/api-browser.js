@@ -2,7 +2,7 @@ var input = document.getElementsByTagName('input')[0];
 
 var makeReq = function() {  
   
-  var host = "https://powerful-sierra-3983.herokuapp.com";  
+  var host = "http://localhost:8080";  
 
   url = host + input.value;
 
