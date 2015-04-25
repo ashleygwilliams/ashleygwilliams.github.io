@@ -1,6 +1,6 @@
 {
   "name": "ashleygwilliams.github.io",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "repository": {
     "type": "git",
     "url": "git@github.com:ashleygwilliams/ashleygwilliams.github.io.git"
@@ -14,5 +14,8 @@
     "sqlite3": "^3.0.5",
     "endpoints": "git://github.com/endpoints/endpoints.git"
   },
-  "devDependencies": {}
+  "scripts": {
+    "start": "node index.js",
+    "build": "jade app/views/index.jade"
+  }
 }
