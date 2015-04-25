@@ -8,6 +8,7 @@ exports.seed = function(knex, Promise) {
         // Inserts seed entries
         knex('presentations').insert({
           id: 1,
+          user_id: 1,
           title: 'How to Train Your Programmer',
           url: 'https://github.com/ashleygwilliams/how-to-train-your-programmer/tree/UvA-summer2014',
           venue: 'University of Amsterdam: Coding the Humanities Seminar',
@@ -15,6 +16,7 @@ exports.seed = function(knex, Promise) {
         }),
         knex('presentations').insert({
           id: 2, 
+          user_id: 1,
           title: 'How to Train Your Programmer',
           url: 'https://github.com/ashleygwilliams/how-to-train-your-programmer/tree/BostonJS-summer2014',
           venue: 'BostonJS',
@@ -22,6 +24,7 @@ exports.seed = function(knex, Promise) {
         }),
         knex('presentations').insert({
           id: 3,
+          user_id: 1,
           title: 'How to Train Your Programmer',
           url: 'https://github.com/ashleygwilliams/how-to-train-your-programmer/tree/MIT-fall2014',
           venue: 'MIT Media Lab: Social Computing Group',
@@ -29,6 +32,7 @@ exports.seed = function(knex, Promise) {
         }),
         knex('presentations').insert({
           id: 4,
+          user_id: 1,
           title: 'If you wish to learn ES/2015 from scratch, you must first invent the universe',
           url: 'http://2015.jsconf.us/speakers.html',
           venue: 'JSConf',
@@ -36,6 +40,7 @@ exports.seed = function(knex, Promise) {
         }),
         knex('presentations').insert({
           id: 5,
+          user_id: 1,
           title: 'If you wish to learn ES/2015 from scratch, you must first invent the universe',
           url: 'http://2015.cascadiajs.com/browser/',
           venue: 'CascadiaFest: Browser Day',
