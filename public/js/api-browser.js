@@ -10,9 +10,12 @@ var makeReq = function(e) {
 
   url = host + input.value;
 
-  var output = document.getElementsByTagName('textarea')[0];
+  var output = document.getElementsByClassName('output')[0];
+  console.log(output);
   function reqListener () {
-    output.innerHTML = this.responseText;
+    var json_string = JSON.stringify(JSON.parse(this.responseText), null, 4);
+    window.res = this.responseText;
+    output.innerHTML = json_string;
   }
 
   var request = new XMLHttpRequest();
