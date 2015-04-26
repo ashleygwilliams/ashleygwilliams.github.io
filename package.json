@@ -19,6 +19,6 @@
   },
   "scripts": {
     "start": "node index.js",
-    "build": "jade app/views/index.jade"
+    "build": "jade app/views/index.jade app/views/explorer.jade --out ./"
   }
 }
