@@ -1,6 +1,9 @@
 # ashleygwilliams.github.io
 > hi, i'm ashley. nice to meet you.
 
+~* THIS README IS OUT OF DATE *~ 
+(will be updating soon)
+
 This repo contains a static landing site for myself, *as well as* a 
 [json-api](http://jsonapi.org) compliant, hypermedia API that would
 generate the response you see on that page. The API is written in an
