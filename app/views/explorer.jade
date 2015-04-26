@@ -1,11 +1,13 @@
 extends layout
 
 block content
+  a.button(href="/") Take me back!
+  h1 the ashley-API explorer
   form
     .row
       .one.columns GET
       .eight.columns
-        input.u-full-width(value="/users/1?include=projects,presentations,community,writing")
+        input.u-full-width(value="/")
       .two.columns
         input.button.button.button-primary(type="submit", value="Explore!")
     .row
