@@ -25,7 +25,13 @@ const classProps = {
     name: function (qb, value) {
       return qb.whereIn('name', value);
     }
-  }
+  },
+  relations: [
+    'projects',
+    'presentations',
+    'community',
+    'writing'
+  ]
 };
 
 module.exports = BaseModel.extend(instanceProps, classProps);
