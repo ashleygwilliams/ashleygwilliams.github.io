@@ -1,5 +1,3 @@
-'use strict';
-
 var input = document.getElementsByTagName('input')[0];
 var output = document.getElementsByClassName('output')[0];
 
