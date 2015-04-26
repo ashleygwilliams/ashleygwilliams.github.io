@@ -1,7 +1,11 @@
 var input = document.getElementsByTagName('input')[0];
 
-var makeReq = function() {  
+var makeReq = function(e) {  
   
+  if (e) {
+    e.preventDefault();  
+  }
+
   var host = "http://45.55.231.22:8080";  
 
   url = host + input.value;
@@ -27,5 +31,5 @@ var makeReq = function() {
 (makeReq)();
 
 // On click, make a new request
-var button = document.getElementsByClassName('button')[0];
-button.addEventListener('click', makeReq);
+var form = document.getElementsByTagName('form')[0];
+form.addEventListener('submit', makeReq, false);

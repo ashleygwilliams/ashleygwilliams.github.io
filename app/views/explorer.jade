@@ -5,9 +5,9 @@ block content
     .row
       .one.columns GET
       .eight.columns
-        input.u-full-width(value="/ashleygwilliams")
+        input.u-full-width(value="/users/1?include=projects,presentations,community,writing")
       .two.columns
-        a.button.button-primary Explore! 
+        input.button.button.button-primary(type="submit", value="Explore!")
     .row
       textarea.u-full-width
   script(src="/public/js/api-browser.js", type="text/javascript")
