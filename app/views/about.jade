@@ -2,10 +2,13 @@ extends layout
 
 block content
   .intro
+    include ./partials/back-btn
     h1 GET /ashleygwilliams
     p hi my name is ashley. it's nice to meet you.
     p i am an engineer/educator/organizer living in ridgewood, queens, NYC.
-  .engineer
+    a.button.button-primary.u-full-width(href="#hireme") Hire Me!
+    hr
+  #engineer
     h2 ## engineer
     p.
       i have been working as an engineer, professionally, for about 3 years.
@@ -24,8 +27,9 @@ block content
       in addition to my work as a web developer, i also have an academic interest
       in programming language design, particularly how specific programming paradigms
       affect the "learn/teach-ability" of the languages that implement them. i have
-      given, and will be giving, several talks on this specific idea.
-  .educator 
+      given, and will be giving, several talks on this specific idea at meetups, 
+      conferences, and universities all over the world.
+  #educator 
     h2 ## educator
     p. 
       for nearly as long as i can remember, education has been a deep passion of mine.
@@ -47,7 +51,7 @@ block content
       particular, i would like to make a new, and/or leverage an existing, package
       manager to automate the creation and depenedency management of classes,
       particularly for the beginner web developer.
-  .organizer
+  #organizer
     h2 ## organizer
     p.
       at the intersection of education and engineering is the infamous tech community.
@@ -56,10 +60,10 @@ block content
       and conferences.
     p. 
       at these events, i primarily find myself advocating for diversity, accessibility,
-      and open source participation. this had taken the form of free classes on git/Github,
+      and open source participation. this has taken the form of free classes on git/Github,
       discussions of codes of conduct, evangelising STEM programs for women, or even
       just volunteering A/V support for high school hackathon presentations.
-  .hireme
+  #hireme
     h2 ## hire me
     p.
       i am currently looking for work! i'd like to work in NYC or remotely- but am open
@@ -68,4 +72,4 @@ block content
       my current interests have me focused on developing APIs as well as making 
       architecture decisions for either client-side or server-side applications, though
       i'm quite open to learning new skills for the right position.
-    a(href="mailto: ashley666ashley@gmail.com")if you're interested in chatting with me, please send me an email!
+    a.button.primary-button.u-full-width(href="mailto:ashley666ashley@gmail.com") If you're interested in chatting more, please send me an email!
