@@ -21,6 +21,6 @@
     "start": "node index.js",
     "start-static": "python -m SimpleHTTPServer",
     "start-api": "node index.js",
-    "build": "jade app/views/index.jade app/views/explorer.jade --out ./"
+    "build": "jade app/views/index.jade app/views/explorer.jade app/views/about.jade --out ./"
   }
 }
