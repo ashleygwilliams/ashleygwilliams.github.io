@@ -13,8 +13,12 @@ var makeReq = function(e) {
     var url = host + input.value;
 
     function reqListener () {
-      var json_string = JSON.stringify(JSON.parse(this.responseText), null, 4);
-      output.innerHTML = json_string;
+      if(this.response) {
+        var json_string = JSON.stringify(JSON.parse(this.responseText), null, 4);
+        output.innerHTML = json_string;
+      } else {
+        output.innerHTML = "Uh-oh spaghetti-o (Server's Down!)";
+      }
     }
 
     var request = new XMLHttpRequest();
