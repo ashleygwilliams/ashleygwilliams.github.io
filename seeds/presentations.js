@@ -45,6 +45,14 @@ exports.seed = function(knex, Promise) {
           url: 'http://2015.cascadiajs.com/browser/',
           venue: 'CascadiaFest: Browser Day',
           date: '[UPCOMING] Summer 2015'
+        }),
+        knex('presentations').insert({
+          id: 6,
+          user_id: 1,
+          title: 'Hackathon Yackathon: Conversations on hacking as civic engagement',
+          url: 'http://www.meetup.com/OccupyData/events/113257952/',
+          venue: 'OccupyData NYC Meetup',
+          date: 'Spring 2013'
         })
     );
 };
