@@ -1,6 +1,8 @@
 # ashleygwilliams.github.io
 > hi, i'm ashley. nice to meet you.
 
+[![Code Climate](https://codeclimate.com/github/ashleygwilliams/ashleygwilliams.github.io/badges/gpa.svg)](https://codeclimate.com/github/ashleygwilliams/ashleygwilliams.github.io)
+
 ~* THIS README IS OUT OF DATE *~ 
 (will be updating soon)
 
