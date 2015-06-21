@@ -21,6 +21,14 @@ exports.seed = function(knex, Promise) {
           role: 'co-maintainer',
           url: 'http://www.github.com/rmurphey/js-assessment',
           description: 'a test-driven approach to testing JS skills'
+        }),
+        knex('projects').insert({
+          id: 3,
+          user_id: 1,
+          name: 'sinatra',
+          role: 'core team member',
+          url: 'http://www.github.com/sinatra',
+          description: 'a lightweight ruby framework'
         })
     );
 };
