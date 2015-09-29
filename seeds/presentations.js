@@ -49,6 +49,14 @@ exports.seed = function(knex, Promise) {
         knex('presentations').insert({
           id: 6,
           user_id: 1,
+          title: 'If you wish to learn ES/2015 from scratch, you must first invent the universe',
+          url: 'http://rejectjs.org/speakers/#ashley-williams',
+          venue: 'Reject JS',
+          date: 'Fall 2015'
+        }),
+        knex('presentations').insert({
+          id: 7,
+          user_id: 1,
           title: 'Hackathon Yackathon: Conversations on hacking as civic engagement',
           url: 'http://www.meetup.com/OccupyData/events/113257952/',
           venue: 'OccupyData NYC Meetup',
