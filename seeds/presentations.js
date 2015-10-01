@@ -36,7 +36,7 @@ exports.seed = function(knex, Promise) {
           title: 'If you wish to learn ES/2015 from scratch, you must first invent the universe',
           url: 'http://2015.jsconf.us/speakers.html',
           venue: 'JSConf',
-          date: '[UPCOMING] Summer 2015'
+          date: 'Summer 2015'
         }),
         knex('presentations').insert({
           id: 5,
@@ -44,7 +44,7 @@ exports.seed = function(knex, Promise) {
           title: 'If you wish to learn ES/2015 from scratch, you must first invent the universe',
           url: 'http://2015.cascadiajs.com/browser/',
           venue: 'CascadiaFest: Browser Day',
-          date: '[UPCOMING] Summer 2015'
+          date: 'Summer 2015'
         }),
         knex('presentations').insert({
           id: 6,
